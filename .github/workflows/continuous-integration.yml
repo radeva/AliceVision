@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-linux:
-    runs-on: flyci-xlarge-ubuntu-latest
+    runs-on: flyci-2xlarge-ubuntu-latest
     if: github.event.pull_request.draft == false
     container:
       image: alicevision/alicevision-deps:2023.10.12-centos7-cuda11.3.1
