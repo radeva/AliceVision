@@ -1,7 +1,9 @@
 name: Continuous Integration
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - 'vr/test-wf'
 
 jobs:
   build-linux:
