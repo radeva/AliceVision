@@ -3,11 +3,11 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - 'vr/test-wf-flyci-xlarge'
+      - 'vr/test-wf-buildjet'
 
 jobs:
   build-linux:
-    runs-on: flyci-xlarge-ubuntu-latest
+    runs-on: buildjet-2vcpu-ubuntu-2204
     if: github.event.pull_request.draft == false
     container:
       image: alicevision/alicevision-deps:2023.10.12-centos7-cuda11.3.1
