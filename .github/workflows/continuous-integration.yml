@@ -3,7 +3,7 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - 'vr/test-wf-flyci'
+      - 'vr/test-wf-flyci-2xlarge'
 
 jobs:
   build-linux:
