@@ -3,11 +3,11 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - 'vr/test-wf-flyci'
+      - 'vr/test-arc-runners'
 
 jobs:
   build-linux:
-    runs-on: flyci-large-ubuntu-latest
+    runs-on: arc-runner-set
     if: github.event.pull_request.draft == false
     container:
       image: alicevision/alicevision-deps:2023.10.12-centos7-cuda11.3.1
