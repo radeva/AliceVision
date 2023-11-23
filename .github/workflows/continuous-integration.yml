@@ -21,6 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      - name: lscpu
+        run: lscpu
+
       - name: Prepare File Tree
         run: |
           mkdir ./build
